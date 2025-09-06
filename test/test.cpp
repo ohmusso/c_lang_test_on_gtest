@@ -1,8 +1,13 @@
 #include <gtest/gtest.h>
+
+extern "C"
+{
 #include "count.h"
+}
 
 // Demonstrate some basic assertions.
-TEST(HelloTest, BasicAssertions) {
+TEST(HelloTest, BasicAssertions)
+{
   int i = 0;
 
   i = count(i);
